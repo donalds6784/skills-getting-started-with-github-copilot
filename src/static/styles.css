@@ -148,13 +148,35 @@ footer {
 	margin-top: 10px;
 }
 .participants-list {
-	list-style: disc;
-	margin: 6px 0 0 20px;
+	list-style: none; /* hide bullet points */
+	margin: 6px 0 0 0;
 	padding: 0;
 }
 .participant-item {
-	margin-bottom: 4px;
+	margin-bottom: 6px;
 	color: #444;
 	font-size: 14px;
 	word-break: break-word;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.participant-email {
+	flex: 1 1 auto;
+	overflow-wrap: anywhere;
+}
+
+.delete-participant {
+	background: transparent;
+	border: none;
+	color: #c62828;
+	font-size: 14px;
+	cursor: pointer;
+	padding: 4px 6px;
+	border-radius: 4px;
+}
+.delete-participant:hover {
+	background-color: rgba(198, 40, 40, 0.08);
 }
